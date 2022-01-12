@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Guess Number!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="guess-game">
+      <button id="again">Again!</button>
+      <h1>Guess My Number!</h1>
+      <h2>(between 1 & 30)</h2>
+      <div class="line"></div>
+      <section class="play">
+        <article class="show-output">
+          <p class="start-guessing">Start guessing...</p>
+          <p><i class="fas fa-star"></i> Score: <span id="score">20</span></p>
+          <p>
+            <i class="fas fa-medal"></i> Highscore:
+            <span id="highscore">0</span>
+          </p>
+        </article>
+        <article class="guess-part">
+          <input type="number" max="30" min="0" />
+          <button id="check">Check!</button>
+        </article>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
